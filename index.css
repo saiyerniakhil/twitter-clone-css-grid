@@ -1,0 +1,163 @@
+:root {
+  --primary-color: #1da1f2;
+  --secondary-color: #e8f5fe;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  width: 100%;
+}
+.navbar {
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.navbar > nav {
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+.navbar:nth-child(1) {
+  margin-top: 1rem;
+}
+.user-profile {
+  margin-top: auto;
+}
+.feed {
+  border-left: #ebeef0 1px solid;
+  border-right: #ebeef0 1px solid;
+  overflow-y: scroll;
+  text-align: justify;
+}
+.feed::-webkit-scrollbar {
+  display: none;
+}
+.tweet {
+  border-bottom: #ebeef0 1px solid;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+.tweet:nth-child(1) {
+  border-top: #ebeef0 1px solid;
+}
+.tweet-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.tweet-content {
+  margin: 0.5rem 0 0 0;
+}
+.tweet-interactions {
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tweet-interactions > * {
+  color: #5b7082;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.tweet-interactions > *:hover {
+  transition: 1s ease-in-out;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.user-profile {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: grey;
+  align-content: center;
+  padding: 1rem;
+}
+.user-image {
+  margin-top: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: grey;
+  align-content: center;
+  padding: 10px;
+}
+.user-handle > a {
+  text-decoration: none;
+  color: black;
+}
+.feed-header {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.feed-header > span:nth-child(2) > h3 > svg {
+  color: var(--primary-color);
+  border-bottom: #ebeef0 1px solid;
+}
+
+.feed-header > span:nth-child(2) > h3 > svg:hover {
+  transition: 1s ease-in-out;
+  background-color: var(--secondary-color);
+}
+
+/* visual changes */
+.logo > * {
+  color: var(--primary-color);
+  fill: var(--primary-color);
+}
+.navbar > nav > *:hover {
+  transition: 1s ease-in-out;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.explore {
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+input[type="text"] {
+  width: 90%;
+  height: 3rem;
+  background-color: #ebeef0;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+  padding-left: 4rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.happening {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  background-color: #f7f9fa;
+}
+.happening-header {
+  padding: 0.5rem;
+  font-size: larger;
+  font-weight: 900;
+  border-bottom: #ebeef0 1px solid;
+}
+
+.happening-card {
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  border-bottom: #ebeef0 1px solid;
+}
+.happening-card > span {
+  margin-bottom: 0.5rem;
+}
